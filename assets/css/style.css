@@ -1,0 +1,9 @@
+:root {
+    --azul: #40D9FF;
+    --verde: #56EB31;
+    --vermelho: #FF4F46;
+}
+
+.bg-azul{ background-color: var(--azul); }
+.bg-verde{ background-color: var(--verde); }
+.bg-vermelho{ background-color: var(--vermelho); }
