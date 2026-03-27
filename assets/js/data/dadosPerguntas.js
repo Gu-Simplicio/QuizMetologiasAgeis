@@ -57,6 +57,7 @@ export const PERGUNTAS = [
             { id: 2, texto: "Podem estar ligados a políticas, cultura e decisões sistêmicas" },
             { id: 3, texto: "São sempre operacionais e visíveis no chão de fábrica" }
         ],
-        idCorreto: 2
+        idCorreto: 2,
+        ultima: true
     }
 ]

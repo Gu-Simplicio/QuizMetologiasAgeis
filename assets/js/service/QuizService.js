@@ -15,7 +15,7 @@ export default class QuizService {
         this.divPerguntas = boxPerguntas;
     }
 
-    limpaQuiz() {
+    limpaQuiz() {  // LIMPA OS ELEMENTOS DO QUIZ PARA ESCREVER NOVAS PERGUNTAS SEM SOBREESCREVER NADA
         const buttons = this.divPerguntas.querySelectorAll("button");
 
         for(let i = 0; i < buttons.length; i++)this.divPerguntas.removeChild(buttons[i]);
@@ -62,7 +62,11 @@ export default class QuizService {
                 this.acertosService.sumAcertos();
                 this.perguntasService.proxPergunta();
 
-                this.montaQuiz();
+                if(this.perguntaAtual.ultima) {
+                    location.href = "fim.html";
+                } else {
+                    this.montaQuiz();
+                }
             }, 1750); 
         } else {
             // altera as cores do botão
