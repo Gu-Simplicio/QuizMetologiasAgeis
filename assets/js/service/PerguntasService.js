@@ -36,6 +36,6 @@ export default class PerguntasService{
     }
 
     clearNumPergunta(){ // LIMPA O LOCALSTORAGE DO NUMPERGUNTA
-        localStorage.removeItem("numPeguntaQuiz");
+        localStorage.removeItem("numPerguntaQuiz");
     }
 }

@@ -62,7 +62,10 @@ export default class QuizService {
                 this.acertosService.sumAcertos();
                 this.perguntasService.proxPergunta();
 
-                if(this.perguntaAtual.ultima) {
+                if(this.perguntaAtual.ultima) { // CASO SEJA A ÚLTIMA QUESTÃO, LIMPA OS DADOS E VAI PRO FIM DO QUIZ
+                    this.acertosService.clearAcertos();
+                    this.perguntasService.clearNumPergunta();
+
                     location.href = "fim.html";
                 } else {
                     this.montaQuiz();
