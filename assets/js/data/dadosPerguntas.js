@@ -1,4 +1,4 @@
-export const perguntas = [
+export const PERGUNTAS = [
     {
         titulo: "1. Sobre muda, mura e muri, assinale a alternativa correta:",
         opcoes: [
